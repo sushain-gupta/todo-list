@@ -1,2 +1,1 @@
-# todo-list
-A simple todo list made with ReactJs
+# Getting Started with Create React App
