@@ -6,8 +6,8 @@ export default function Todos(props) {
     "minHeight": "50vh",
   }
   return (
-    <div className='container text-center' style={containerStyle}>
-        {props.todos.length===0? "There's nothing to do :)":
+    <div className='container' style={containerStyle}>
+        {props.todos.length===0? <p className="text-center">There's nothing to do :)</p>:
         props.todos.map((todo) => {
           return <TodoItem todo = {todo} key={todo.sno} onDel={props.del}/>
         })}
