@@ -3,7 +3,7 @@ import {TodoItem} from './TodoItem'
 
 export default function Todos(props) {
   const containerStyle = {
-    "minHeight": "50vh",
+    "minHeight": "48.9vh"
   }
   return (
     <div className='container' style={containerStyle}>
