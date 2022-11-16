@@ -34,9 +34,7 @@ function App() {
     setTodos([...todos, myTodo]);
   }
 
-  const [todos, setTodos] = useState(initTodo
-    // localStorage.getItem(myTodo.st)
-  );
+  const [todos, setTodos] = useState(initTodo);
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos])
@@ -45,7 +43,7 @@ function App() {
   return (
     <>
       <Router>
-        <Header title={"SusNotes"} searchBar={false} />
+        <Header title={"MeriList"} searchBar={false} />
         <Switch>
           <Route exact path="/" element={
             <>
