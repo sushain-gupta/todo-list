@@ -1,6 +1,5 @@
 import { React, useState, useEffect } from 'react';
 import Header from './MyComponents/Header';
-import Footer from './MyComponents/Footer';
 import Todos from './MyComponents/Todos';
 import { About } from './MyComponents/About';
 import { TodoForm } from './MyComponents/TodoForm';
@@ -54,8 +53,6 @@ function App() {
 
           <Route exact path="/about" element={<About />} />
         </Switch>
-
-        <Footer />
       </Router>
     </>
   )
